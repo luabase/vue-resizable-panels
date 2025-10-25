@@ -1,0 +1,13 @@
+import type { PanelData } from "../types";
+export declare function adjustByDelta(panels: Map<string, PanelData>, idBefore: string, idAfter: string, delta: number, prevSizes: number[], panelSizeBeforeCollapse: Map<string, number>): number[];
+export declare function callPanelCallbacks(panelsArray: PanelData[], prevSizes: number[], nextSizes: number[]): void;
+export declare function getBeforeAndAfterIds(id: string, panelsArray: PanelData[]): [idBefore: string | null, idAFter: string | null];
+export declare function getFlexGrow(panels: Map<string, PanelData>, id: string, sizes: number[]): string;
+export declare function getPanel(id: string): HTMLDivElement | null;
+export declare function getPanelGroup(id: string): HTMLDivElement | null;
+export declare function getResizeHandle(id: string): HTMLDivElement | null;
+export declare function getResizeHandleIndex(id: string): number | null;
+export declare function getResizeHandles(): HTMLDivElement[];
+export declare function getResizeHandlesForGroup(groupId: string): HTMLDivElement[];
+export declare function getResizeHandlePanelIds(groupId: string, handleId: string, panelsArray: PanelData[]): [idBefore: string | null, idAfter: string | null];
+export declare function panelsMapToSortedArray(panels: Map<string, PanelData>): PanelData[];
