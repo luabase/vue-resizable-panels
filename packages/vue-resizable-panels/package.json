@@ -1,6 +1,9 @@
 {
-  "name": "vue-resizable-panels",
+  "name": "@luabase/vue-resizable-panels",
   "version": "0.0.1",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "description": "An intuitive resizable panel groups/layouts components for Vue.",
   "type": "module",
   "main": "./dist/index.umd.cjs",
@@ -26,13 +29,13 @@
   ],
   "license": "MIT",
   "author": "Mujahid Anuar (https://github.com/mujahidfa)",
-  "homepage": "https://github.com/mujahidfa/vue-resizable-panels",
+  "homepage": "https://github.com/luabase/vue-resizable-panels",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mujahidfa/vue-resizable-panels.git"
+    "url": "git+https://github.com/luabase/vue-resizable-panels.git"
   },
   "bugs": {
-    "url": "https://github.com/mujahidfa/vue-resizable-panels/issues"
+    "url": "https://github.com/luabase/vue-resizable-panels/issues"
   },
   "keywords": [],
   "scripts": {
@@ -50,7 +53,6 @@
     "@vitejs/plugin-vue": "^4.0.0",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^11.0.2",
-    "@vue/tsconfig": "^0.1.3",
     "dts-bundle": "^0.7.3",
     "eslint": "^8.31.0",
     "eslint-plugin-vue": "^9.8.0",
